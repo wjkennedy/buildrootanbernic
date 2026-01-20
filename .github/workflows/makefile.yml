@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Install dependencies
+    - name: Create default config
       run: make garlicos_armhf_defconfig
 
-    - name: Run check
+    - name: Build
       run: make
